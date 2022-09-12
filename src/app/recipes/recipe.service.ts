@@ -8,25 +8,44 @@ import { ShoppingListService } from '../shopping-list/shopping-list.service';
 export class RecipeService {
   recipesChanged = new Subject<Recipe[]>();
 
-  /*private recipes: Recipe[] = [
+  private recipes: Recipe[] = [
     new Recipe(
-      'Tasty Schnitzel',
-      'A super-tasty Schnitzel - just awesome!',
-      'https://upload.wikimedia.org/wikipedia/commons/7/72/Schnitzel.JPG',
+      'Critical Jewel 2',
+      'Extends the weapon sharpness gauge. However, it will not increase the gauge past its maximum.',
+      'https://monsterhunterrise.wiki.fextralife.com/file/Monster-Hunter-Rise/handicraft_jewel_3-monster-hunter-rise-wiki-guide.png',
       [
-        new Ingredient('Meat', 1),
-        new Ingredient('French Fries', 20)
+        new Ingredient('Zenny', 4000),
+        new Ingredient('Lazurite Jewel', 5),
+        new Ingredient('Apex Blaze Sac', 2),
+        new Ingredient('Magnamalo Horn+', 4),
+        new Ingredient('Almudron Plate', 1),
       ]),
-    new Recipe('Big Fat Burger',
-      'What else you need to say?',
-      'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
+    new Recipe(
+      'Mastery Jewel 2',
+      'Prevents your weapon from losing sharpness during critical hits.',
+      'https://monsterhunterrise.wiki.fextralife.com/file/Monster-Hunter-Rise/mastery-jewel-2-decoration-monster-hunter-rise-wiki-guide-new.png',
       [
-        new Ingredient('Buns', 2),
-        new Ingredient('Meat', 1)
-      ])
-  ];*/
+        new Ingredient('Zenny', 4000),
+        new Ingredient('Lazurite Jewel', 8),
+        new Ingredient('Fire Dragon Scale+', 6),
+        new Ingredient('Teostra Mane', 4),
+        new Ingredient('Goss Harag Bile', 1),
+      ]),
+    new Recipe(
+      'Handicraft Jewel 3',
+      'Extends the weapon sharpness gauge. However, it will not increase the gauge past its maximum.',
+      'https://monsterhunterrise.wiki.fextralife.com/file/Monster-Hunter-Rise/handicraft_jewel_3-monster-hunter-rise-wiki-guide.png',
+      [
+        new Ingredient('Zenny', 4000),
+        new Ingredient('Lazurite Jewel', 8),
+        new Ingredient('Daora Dragon Scale+', 6),
+        new Ingredient('Daora Horn+', 4),
+        new Ingredient('Purple Magna Orb', 1),
+      ]),
 
-  private recipes: Recipe[] = [];
+  ];
+
+  /*private recipes: Recipe[] = [];*/
 
   constructor(private slService: ShoppingListService) {}
 
